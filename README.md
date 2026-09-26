@@ -1,15 +1,15 @@
 # 💪 FitLog — Workout Library
 
-A dark, no-nonsense gym companion built for the B14-A6 Fit Log assignment. Pick a lift from the library, lock it into today's plan, track sets against a five-lift daily cap, and save others for later — all backed by a live workouts API and persisted in your browser.
+A dark, no-nonsense gym companion built to test my next.js skills. Pick a lift from the library, lock it into today's plan, and save others for later — all backed by a live workouts API and persisted in your browser.
 
 ## 🔗 Links
 
-- **Live Link:** _fill in after deploying_
-- **GitHub Repository:** _fill in after pushing_
+- **Live Link:** https://workouttrackerfitlog.vercel.app/
+- **GitHub Repository:** https://github.com/MdSagarAhammed/Workout_tracker_fitlog.git
 
 ## 🛠️ Technologies Used
 
-- **Next.js 14** (App Router) — routing, server components, data fetching
+- **Next.js 14** (App Router) — dynamic routing, server components, data fetching
 - **React 18** + TypeScript
 - **Tailwind CSS** — styling and responsive layout
 - **lucide-react** — icon set
