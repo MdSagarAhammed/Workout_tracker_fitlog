@@ -46,7 +46,7 @@ export default async function WorkoutDetailPage({
           />
         </div>
 
-        {/* Right: details */}
+        
         <div className="flex flex-col">
           <h1 className="font-display text-3xl font-bold uppercase leading-tight tracking-tight sm:text-4xl">
             {workout.name}
@@ -66,7 +66,7 @@ export default async function WorkoutDetailPage({
             ))}
           </div>
 
-          {/* Key specs panel */}
+          
           <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-ink-850">
             {specs.map((spec, i) => (
               <div
@@ -84,7 +84,7 @@ export default async function WorkoutDetailPage({
             ))}
           </div>
 
-          {/* Instructions */}
+          
           <div className="mt-6">
             <h2 className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-accent">
               Instructions

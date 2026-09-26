@@ -54,7 +54,7 @@ export function PlanProvider({ children }: { children: ReactNode }) {
   const [isHydrated, setIsHydrated] = useState(false);
   const { showToast } = useToast();
 
-  // Hydrate from localStorage after mount only, to avoid SSR/client mismatch.
+  
   useEffect(() => {
     setPlanIds(readIds(PLAN_KEY));
     setSavedIds(readIds(SAVED_KEY));

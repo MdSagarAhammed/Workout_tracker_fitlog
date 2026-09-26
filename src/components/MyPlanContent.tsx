@@ -87,7 +87,7 @@ export default function MyPlanContent() {
         />
       </div>
 
-      {/* Tabs */}
+      
       <div className="mt-8 flex gap-2 border-b border-white/10">
         {tabs.map((tab) => {
           const count = tab.key === "plan" ? planIds.length : savedIds.length;
@@ -117,7 +117,7 @@ export default function MyPlanContent() {
         })}
       </div>
 
-      {/* List */}
+      
       <div className="mt-6">
         {showLoading ? (
           <div className="flex flex-col items-center justify-center gap-4 py-16 text-center">

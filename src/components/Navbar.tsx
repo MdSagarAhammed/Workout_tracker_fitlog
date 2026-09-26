@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-ink-950/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Logo */}
+        
         <Link href="/" className="flex items-center gap-2 font-display text-lg font-bold tracking-wide">
           <span className="flex h-8 w-8 items-center justify-center rounded-md bg-accent text-ink-950">
             <Dumbbell size={18} strokeWidth={2.5} />
@@ -25,7 +25,7 @@ export default function Navbar() {
           FIT<span className="text-accent">LOG</span>
         </Link>
 
-        {/* Nav links */}
+        
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => {
             const isActive =
@@ -47,7 +47,7 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Badges */}
+        
         <div className="flex items-center gap-2.5">
           <Link
             href="/my-plan?tab=plan"
@@ -70,7 +70,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile nav links */}
+      
       <nav className="flex items-center justify-center gap-6 border-t border-white/10 py-2 md:hidden">
         {navLinks.map((link) => {
           const isActive =
