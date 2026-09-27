@@ -12,6 +12,7 @@ A dark, no-nonsense gym companion built to test my next.js skills. Pick a lift f
 - **Next.js 14** (App Router) — dynamic routing, server components, data fetching
 - **React 18** + TypeScript
 - **Tailwind CSS** — styling and responsive layout
+- **React-toastify** — toast notifications
 - **lucide-react** — icon set
 - **Context API + localStorage** — Today's Plan / Saved / Done state persistence across reloads
 - FitLog REST API (`https://api.abcz.workers.dev/api/fitlog`) — workout data
