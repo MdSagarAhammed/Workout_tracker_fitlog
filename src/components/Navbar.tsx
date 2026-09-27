@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Dumbbell } from "lucide-react";
+import { Dumbbell, Menu } from "lucide-react";
 import { usePlan } from "@/context/PlanContext";
+import { useState } from "react";
 
 const navLinks = [
   { href: "/", label: "Workout" },
@@ -13,6 +14,7 @@ const navLinks = [
 export default function Navbar() {
   const pathname = usePathname();
   const { planIds, savedIds } = usePlan();
+  // const [isMobileMenuOpen,setIsMobileMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-ink-950/90 backdrop-blur">
@@ -88,6 +90,45 @@ export default function Navbar() {
           );
         })}
       </nav>
+{/* Mobile menu button */}
+{/* <div className="border-t border-white/10 px-4 py-2 md:hidden">
+  <button
+    type="button"
+    onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+    className="flex w-full items-center justify-between rounded-lg px-2 py-2 text-sm font-semibold uppercase tracking-wide text-zinc-300 transition-colors hover:text-white"
+    aria-label="Toggle navigation menu"
+    aria-expanded={isMobileMenuOpen}
+  >
+    <span>Menu</span>
+
+    {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+  </button>
+
+  {isMobileMenuOpen && (
+    <nav className="flex flex-col gap-1 pb-2 pt-1">
+      {navLinks.map((link) => {
+        const isActive =
+          link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+
+        return (
+          <Link
+            key={link.href}
+            href={link.href}
+            onClick={() => setIsMobileMenuOpen(false)}
+            className={`rounded-lg px-3 py-3 text-sm font-semibold uppercase tracking-wide transition-colors ${
+              isActive
+                ? "bg-accent text-ink-950"
+                : "text-zinc-300 hover:bg-ink-800 hover:text-white"
+            }`}
+          >
+            {link.label}
+          </Link>
+        );
+      })}
+    </nav>
+  )}
+</div> */}
+
     </header>
   );
 }
