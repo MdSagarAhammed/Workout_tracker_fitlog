@@ -5,6 +5,8 @@ import { ToastProvider } from "@/context/ToastContext";
 import { PlanProvider } from "@/context/PlanContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -36,10 +38,23 @@ export default function RootLayout({
         <ToastProvider>
           <PlanProvider>
             <Navbar />
+
             <main className="flex-1">{children}</main>
+
             <Footer />
           </PlanProvider>
         </ToastProvider>
+
+        <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          pauseOnHover
+          draggable
+          theme="dark"
+        />
       </body>
     </html>
   );
